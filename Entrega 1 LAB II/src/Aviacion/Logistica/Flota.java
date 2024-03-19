@@ -2,19 +2,19 @@ package Aviacion.Logistica;
 
 public class Flota {
     private String flota;
-    private Avion avion;
     public Flota() {
 
     }
 
-    public Flota(String flota, int capacidadAsientos, String marcaAvion) {
+    public Flota(String flota) {
         this.flota = flota;
-        this.avion = new Avion(capacidadAsientos, marcaAvion);
-
     }
 
-    public void agregarAvion(int capacidadAsientos, String marcaAvion){
-        Avion nuevoAvion = new Avion(capacidadAsientos, marcaAvion);
-        this.avion = nuevoAvion;
+    public String getFlota() {
+        return flota;
+    }
+
+    public void setFlota(String flota) {
+        this.flota = flota;
     }
 }

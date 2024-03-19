@@ -5,24 +5,22 @@ public class Vuelo {
     private float horarioSalida;
     private int idVuelo;
     private float tiempoVuelo;
-    private Avion avion;
 
     public Vuelo() {
     }
 
-    public Vuelo(float horarioLlegada, float horarioSalida, int idVuelo, float tiempoVuelo,Avion avion) {
+    public Vuelo(float horarioLlegada, float horarioSalida, int idVuelo, float tiempoVuelo) {
         this.horarioLlegada = horarioLlegada;
         this.horarioSalida = horarioSalida;
         this.idVuelo = idVuelo;
         this.tiempoVuelo = tiempoVuelo;
-        this.avion = avion;
     }
 
-    public Avion getAvion() {
-        return avion;
+    public int getIdVuelo() {
+        return idVuelo;
     }
 
-    public void setAvion(Avion avion) {
-        this.avion = avion;
+    public void setIdVuelo(int idVuelo) {
+        this.idVuelo = idVuelo;
     }
 }

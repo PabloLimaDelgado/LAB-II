@@ -1,16 +1,19 @@
 package Aviacion.Logistica;
+import java.util.ArrayList;
 
 public class Avion {
+
     private int capacidadAsientos;
     public String marcaAvion;
-    private Reserva reserva;
-
+    private Vuelo vuelo;
+    private Flota flota;
     public Avion() {
     }
 
-    public Avion(int capacidadAsientos, String marcaAvion) {
+    public Avion(int capacidadAsientos, String marcaAvion, String flota) {
         this.capacidadAsientos = capacidadAsientos;
         this.marcaAvion = marcaAvion;
+        this.flota = new Flota(flota);
     }
 
     public int getCapacidadAsientos() {
@@ -25,9 +28,19 @@ public class Avion {
 
     }
 
-    public void reservarAsiento(Reserva reserva){
-        this.reserva = reserva;
+    public Vuelo getVuelo() {
+        return vuelo;
     }
 
+    public void setVuelo(Vuelo vuelo) {
+        this.vuelo = vuelo;
+    }
 
+    public Flota getFlota() {
+        return flota;
+    }
+
+    public void setFlota(Flota flota) {
+        this.flota = flota;
+    }
 }

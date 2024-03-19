@@ -1,0 +1,1 @@
+El proyecto 1 consta de 3 Paquetes 2 de ellos corresponden al primer ejercicio y el terceto corresponde al segundo punto. Tambien estan adjuntoos los diagramas UML de cada uno de los puntos en formato .img
